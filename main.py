@@ -21,7 +21,7 @@ if __name__ == "__main__":
     deltax = 3
     deltay = 2 - r - r
     d = 1 - r
-    im.putpixel((x1, y1), blk)
+    # im.putpixel((x1, y1), blk)
     while (x < y):
         if d < 0:
             d += deltax
@@ -45,3 +45,4 @@ if __name__ == "__main__":
         im.putpixel((-y + x1, x + y1), blk)
         im.putpixel((-x + x1, y + y1), blk)
     im.show()
+    im.save("c.jpg")
